@@ -1,0 +1,25 @@
+:root{
+    --background:#a1a1a1;
+    --color:#1f1f1f;
+    --highlight:#4242aa;
+}
+*{
+    transition: all 0.2s ease-out;
+    font-family: 'jetbrains mono';
+}
+.footerbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:5vw;
+    padding-right:5vw;
+}
+.links ul li{
+    list-style: none;
+    text-decoration: underline var(--background);
+    &:hover{
+        color: var(--highlight);
+        text-decoration: underline var(--highlight);
+
+    }
+}
