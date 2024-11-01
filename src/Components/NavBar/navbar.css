@@ -8,6 +8,7 @@
 }
 .NavBar{
     background-color: var(--background);
+    height: 7.5vh;
     color: var(--color);
     display: flex;
     justify-content: space-between;

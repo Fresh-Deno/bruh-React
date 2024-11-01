@@ -1,6 +1,4 @@
 :root{
-    --background:#a1a1a1;
-    --color:#1f1f1f;
     --highlight:#4242aa;
 }
 *{
@@ -8,15 +6,22 @@
     font-family: 'jetbrains mono';
 }
 .footerbox{
+    position: sticky;
+    bottom: 0;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left:5vw;
     padding-right:5vw;
+    height: min-content;
+    overflow: hidden;
+    background: linear-gradient(to top, var(--background),#00000000);
+    backdrop-filter: blur(5px);
 }
 .links ul li{
     list-style: none;
-    text-decoration: underline var(--background);
+    text-decoration: underline transparent;
     &:hover{
         color: var(--highlight);
         text-decoration: underline var(--highlight);
